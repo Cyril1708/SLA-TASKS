@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+</head>
+<body>
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create Account</h2>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <label>First name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last name:<br>
+            <input type="text" name="firstname" required>
+            
+            <input type="text" name="lastname">
+        </label><br><br>
+
+        <label>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="email" size="35" required>
+            &nbsp;&nbsp;
+        </label><br><br>
+        
+        <label>Password:&nbsp;
+            <input type="password" name="password" size="35" required>
+        </label><br><br>
+
+        <label>Confirm<br>Password:&nbsp;
+            <input type="password" name="confirm_password" size="35" required>
+        </label><br><br>
+
+        Gender:&nbsp;&nbsp;&nbsp;
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label>Age:&nbsp;
+        <input type="number" name="age" value="18" min="10" max="99">
+        </label>
+
+        </label><br><br>
+
+        Hobbies:&nbsp;&nbsp;
+        <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+        <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+        <label><input type="checkbox" name="hobbies" value="travel"> Travel</label>
+        <label><input type="checkbox" name="hobbies" value="movies"> Movies</label><br><br>
+
+        <label>Upload Profile Picture:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" name="profile_picture">
+        </label><br><br>
+
+        <label>Bio<br>
+            <textarea name="bio" rows="5" cols="45"></textarea>
+        </label><br><br>
+
+        <button type="submit" >Create</button>
+    </form>
+</body>
+</html>

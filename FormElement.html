@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action ="thankyou.html" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="appointment">Appointment Date&Time:</label>
+        <input type="datetime-local" id="appointment"><br><br>
+
+        <label for="billing-month">Billing Mont:</label>
+        <input type="month" id="billing-month" name="billing-month"><br><br>
+
+        <label for="week-number">Select Week:</label>
+        <input type="week" id="week-number" name="week-number"><br><br>
+
+        <p><strong>Gender:</strong></p>
+        <input type="radio" id="male" name="gender">
+        <label for="male">male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">female</label>
+
+        <input type="radio" id="others" name="gender">
+        <label for="others">Others</label><br>
+
+        <p><strong>Hobbies</strong></p>
+
+        <input type="checkbox" id="travel" name="hobbies" value="travel">
+        <label for="travel">Travel</label>
+
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="movies" name="hobbies" value="movies">
+        <label for="movies">Movies</label><br>
+
+        <p></p>
+        <input type="submit" value="Submit">
+    </form>
+     
+    <h2>Upload a File</h2>
+    <form action="/upload" method="post">
+
+        <label for="file">Choose a file:</label><br>
+        <input type="file" id="file" name="file"><br>
+
+        <button type="submit">upload< 0/button>
+    </form>
+
+</body>
+</html>
