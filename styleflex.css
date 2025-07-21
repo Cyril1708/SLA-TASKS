@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+.container
+{
+    min-height: 100vh;
+    background-color: lightskyblue;
+}
+.container
+{
+    display: flex;
+    
+}
+.header{
+    flex:1;
+    border: 2px solid red;
+    border-radius: 2em;
+}
+.section{
+    flex:1;
+    border: 2px solid red;
+    border-radius: 2em;
+}
+.col-left{
+    flex: 2;
+    border-radius: 2em;
+}
+.col-right{
+    flex:1;
+    border-radius: 2em;
+}

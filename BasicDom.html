@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Hello DOM</h1>
+    <p>This is a paragraph</p>
+    <button onclick="changeTitle()">Click Me</button>
+    <p>This is the first paragraph</p>
+    <p>This is the second paragraph</p>
+    <button onclick="changeFirstPara()">Change First</button>
+    
+    
+    <script>
+        function changeTitle()
+        {
+            document.getElementById("title").textContent="Title changed()";
+            document.body.style.backgroundColor="lightblue"
+        }
+
+        function changeFirstPara()
+        {
+            document.querySelector("p").textContent="This was changed";
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Script Task</h1>
+
+    <script>
+        let users =[
+            {name:"Cyril",age:27},
+            {name:"Vijay",age:26},
+            {name:"jp",age:23},
+            {name:"Gokul",age:25}
+        ];
+
+        let above25 = users.filter(user=>Number(user.age) > 25);
+        console.log(above25);
+
+        let capUser = above25.map(user=>({
+            name:user.name.toUpperCase(),
+            age:user.age
+        }))
+        console.log(capUser)
+
+        let products = [
+            { name: "Laptop", price: 900 },
+            { name: "Mouse", price: 25 },
+            { name: "Monitor", price: 300 }
+        ];
+        let result=products.filter(product=>product.price>100).map(product=>product.name);
+        console.log(result)
+
+        let DoubleAge=users.map(user=>({name:user.name,age:user.age*2})).filter(user=>user.age>50).map(user=>user.name);
+        console.log(DoubleAge)
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <button onclick="ChangeColor()">Change Color</button>
+    <script>
+
+        let index=0;
+        const color=["red","yellow","green","blue"];
+        function ChangeColor()
+        {
+        if(index<color.length)
+        {
+            document.getElementById("demo").innerText=color[index];
+            index++;
+        }
+        }
+    </script>
+</body>
+</html>
