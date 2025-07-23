@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Temperature Convension</h1>
+    Enter Celsius:<input type="text" id="celsiustofer"><br>
+    Enter Fahrenhite:<input type="text" id="fahrenhitetocel"><br>
+    <button onclick="conver()">Convert</button><br>
+
+    <p id="result"></p>
+
+    <script>
+        function conver() {
+            let celtofer = document.getElementById("celsiustofer").value;
+            let fertocel = document.getElementById("fahrenhitetocel").value;
+            
+            if (celtofer !== "") {
+                document.getElementById("result").innerHTML = (celtofer * 9 / 5) + 32;
+            } else if (fertocel !== "") {
+                document.getElementById("result").innerHTML = ((fertocel - 32) * 5 / 9);
+            } else {
+                document.getElementById("result").innerHTML = "Please select any one";
+            }
+        }
+    </script>
+
+</body>
+</html>

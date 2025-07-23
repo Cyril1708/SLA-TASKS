@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Checker</title>
+</head>
+<body>
+    <h2>Check for A+ Grade</h2>
+
+    Enter Total Marks: <input type="number" id="marks"><br><br>
+    Final Exam? <input type="checkbox" id="isFinal"><br><br>
+
+    <button onclick="checkGrade()">Check Grade</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkGrade() {
+            let marks = document.getElementById("marks").value;
+            let isFinalExam = document.getElementById("isFinal").checked;
+            let isAPlus;
+
+            if (isFinalExam) {
+                isAPlus = marks >= 90;
+            } else {
+                isAPlus = marks >= 89 && marks <= 100;
+            }
+
+            if (isAPlus) {
+                document.getElementById("result").innerHTML = "A+<br>true";
+            } else {
+                document.getElementById("result").innerHTML = "false";
+            }
+        }
+    </script>
+</body>
+</html>

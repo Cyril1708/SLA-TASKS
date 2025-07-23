@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Temperature Convension</h1>
+    Enter Celsius:<input type="text" id="celsiustofer"><br>
+    <button onclick="convertceltofer()">Celsius to fahrenhite</button><br>
+
+    Enter Fahrenhite:<input type="text" id="fahrenhitetocel"><br>
+    <button onclick="convertfartocel()">fahrenhite to celsius</button><br>
+
+    <p id="result"></p>
+
+    <script>
+        function convertceltofer()
+        {
+            celtofer=document.getElementById("celsiustofer").value
+            document.getElementById("result").innerHTML=(celtofer*9/5)+35;
+        }
+        function convertfartocel()
+        {
+            fertocel=document.getElementById("fahrenhitetocel").value
+            document.getElementById("result").innerHTML=(fertocel-32)*5/9;
+        }
+    </script>
+
+</body>
+</html>
